@@ -3,6 +3,7 @@ package net.indecton.donateinfo;
 import java.io.File;
 import java.util.List;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -35,6 +36,7 @@ public class donateinfo extends JavaPlugin
 				{
 					reloadConfig();
 					loadConfig();
+					sender.sendMessage(ChatColor.GREEN + "Config Reloaded.");
 				}
 			}
 		}
