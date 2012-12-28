@@ -27,7 +27,6 @@ public class donateinfo extends JavaPlugin
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String cmdlabel, String[] args)
 	{
-		
 		if (args.length >= 1) //Has 1 or more arguments
 		{
 			if (args[0].equalsIgnoreCase("reload"))
@@ -36,6 +35,16 @@ public class donateinfo extends JavaPlugin
 				{
 					reloadConfig();
 					loadConfig();
+				}
+			}
+		}
+		else
+		{
+			if (sender.hasPermission("donateinfo.use"))
+			{
+				for (short c=0; c < msg.size(); c++)
+				{
+					sender.sendMessage(msg.get(c));
 				}
 			}
 		}
