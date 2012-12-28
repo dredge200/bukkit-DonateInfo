@@ -1,3 +1,23 @@
+#==COLOR CODES==#
+# $_ - $ sign
+# $0 - Black
+# $1 - Dark Blue
+# $2 - Dark Green
+# $3 - Dark Aqua
+# $4 - Dark Red
+# $5 - Purple
+# $6 - Gold
+# $7 - Gray
+# $8 - Dark gray
+# $9 - Indigo
+# $a - Bright Green
+# $b - Aqua
+# $c - Red
+# $d - Pink
+# $e - Yellow
+# $f - White
+# $k - Random changing letters
+
 # donation message
 message:
 - §aFirst line of donation message
