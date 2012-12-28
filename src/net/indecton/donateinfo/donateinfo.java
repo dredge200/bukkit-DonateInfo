@@ -1,5 +1,6 @@
 package net.indecton.donateinfo;
 
+import java.io.File;
 import java.util.List;
 
 import org.bukkit.command.Command;
@@ -27,6 +28,17 @@ public class donateinfo extends JavaPlugin
 	public boolean onCommand(CommandSender sender, Command cmd, String cmdlabel, String[] args)
 	{
 		
+		if (args.length >= 1) //Has 1 or more arguments
+		{
+			if (args[0].equalsIgnoreCase("reload"))
+			{
+				if (sender.hasPermission("donateinfo.reload"))
+				{
+					reloadConfig();
+					loadConfig();
+				}
+			}
+		}
 		return true;
 	}
 }
