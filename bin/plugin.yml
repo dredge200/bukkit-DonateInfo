@@ -7,9 +7,9 @@ commands:
   donate:
     description: View donation information
 permissions:
-  donationinfo.reload:
+  donateinfo.reload:
     default: op
-  bb.*:
+  donateinfo.*:
     default: op
     children:
-      donationinfo: true
+      donateinfo.reload: true
