@@ -18,6 +18,12 @@ public class donateinfo extends JavaPlugin
 		}
 		msg = getConfig().getStringList("message");
 	}
+	
+	public void onEnable()
+	{
+		loadConfig();
+	}
+	
 	public boolean onCommand(CommandSender sender, Command cmd, String cmdlabel, String[] args)
 	{
 		
