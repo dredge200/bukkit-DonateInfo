@@ -42,12 +42,9 @@ public class donateinfo extends JavaPlugin
 		}
 		else
 		{
-			if (sender.hasPermission("donateinfo.use"))
+			for (short c=0; c < msg.size(); c++)
 			{
-				for (short c=0; c < msg.size(); c++)
-				{
-					sender.sendMessage(msg.get(c).replace('$', '¤'));
-				}
+				sender.sendMessage(msg.get(c).replace('$', '¤'));
 			}
 		}
 		return true;

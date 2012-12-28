@@ -6,14 +6,10 @@ author: dredge20
 commands:
   donate:
     description: View donation information
-    permission: donationinfo.use
 permissions:
-  donationinfo.use:
-    default: true
   donationinfo.reload:
     default: op
   bb.*:
     default: op
     children:
-      donationinfo.use: true
       donationinfo: true
