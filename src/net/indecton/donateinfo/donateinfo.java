@@ -37,7 +37,6 @@ public class donateinfo extends JavaPlugin
 					reloadConfig();
 					loadConfig();
 					sender.sendMessage(ChatColor.GREEN + "Config Reloaded.");
-					getServer().getLogger().info(sender.getName() + " reloaded the config.");
 				}
 			}
 		}
