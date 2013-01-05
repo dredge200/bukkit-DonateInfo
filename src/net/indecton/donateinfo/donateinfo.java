@@ -37,6 +37,8 @@ public class donateinfo extends JavaPlugin
 							tmp += s.charAt(i);
 						}
 					}
+				}
+			}
 			else //If character is not $
 			{
 				tmp += s.charAt(i);
