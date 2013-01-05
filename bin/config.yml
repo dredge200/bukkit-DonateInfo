@@ -20,6 +20,6 @@
 
 # donation message
 message:
-- $aFirst line of donation message
-- $cSecond line of donation message
-- $6http://indecton.net/donate
+- "$aFirst line of donation message"
+- "$cSecond line of donation message"
+- "$6http://indecton.net/donate"
