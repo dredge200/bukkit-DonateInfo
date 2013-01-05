@@ -79,7 +79,7 @@ public class donateinfo extends JavaPlugin
 		{
 			for (short c=0; c < msg.size(); c++)
 			{
-				sender.sendMessage(msg.get(c).replace('$', '¤'));
+				sender.sendMessage(formatColors(msg.get(c)));
 			}
 		}
 		return true;
