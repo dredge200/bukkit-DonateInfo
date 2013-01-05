@@ -17,7 +17,7 @@ public class donateinfo extends JavaPlugin
 		String tmp = "";
 		for (int i=0; i < s.length(); i++) //For each character in String s
 		{
-			if (s.charAt(i) == '$') //If character is $
+			if (s.charAt(i) == '&') //If character is $
 			{
 				if (i+1 < s.length()) //If is not last character
 				{
@@ -25,11 +25,11 @@ public class donateinfo extends JavaPlugin
 					if ((s.charAt(i) >= '0' && s.charAt(i) <= '9') ||
 							(s.charAt(i) >= 'a' && s.charAt(i) <= 'f') ||
 							(s.charAt(i) >= 'k' && s.charAt(i) <= 'o') ||
-							(s.charAt(i) == 'r') || (s.charAt(i) == '_')) //Is valid symbol/color/format code
+							(s.charAt(i) == 'r') || (s.charAt(i) == '&')) //Is valid symbol/color/format code
 					{
-						if (s.charAt(i) == '_') //Is symbol code
+						if (s.charAt(i) == '&') //Is symbol code
 						{
-							tmp += '$';
+							tmp += '&';
 						}
 						else //Is color/format code
 						{
