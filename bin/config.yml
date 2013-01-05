@@ -1,5 +1,6 @@
 #==COLOR CODES==#
 # $_ - $ sign
+# COLORS
 # $0 - Black
 # $1 - Dark Blue
 # $2 - Dark Green
@@ -16,7 +17,13 @@
 # $d - Pink
 # $e - Yellow
 # $f - White
-# $k - Random changing letters
+# SPECIAL
+# $k - Magic
+# $l - Bold
+# $m - Strike
+# $n - Underlined
+# $o - Italics
+# $r - Reset
 
 # donation message
 message:
